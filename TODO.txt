@@ -1,0 +1,20 @@
+TODO:
+
+[ ] How are package and module names supposed to be organized? Java conventions strive for unique paths (reverse domain). What about here? What measures are taken not to collide namespaces? What's the philosophy on how much to break up code into packages? (The standard lib doesn't even use many packages, just modules)
+[ ] PEP8 everything
+[ ] Docs for modules and public classes/methods
+[ ] Read some good python code and integrate good style, practices, etc.
+[ ] Learn more about threads and how that relates to OS processes, etc.
+[ ] Explore the Python asyncore and asynchat libs and get any other cool ideas. Interestingly, those modules don't use threads. :}
+[ ] Ask this question on StackOverflow.com
+    # For some reason when when threads in this Executor
+    # complete (and after the add_done_callback() is invoked) the
+    # threads are still taking up system resources (viewable via "ps
+    # -eLF" in Linux). Is Executor.shutdown() the only way to free
+    # up the thread's resources? This is not a problem when using
+    # the Thread class (when the callable target is done executing,
+    # the thread does not show up in "ps -eLF"). How can an Executor
+    # pool be used in an efficient manner so that as threads end they
+    # will not consume resources?
+    #self.clients[client].add_done_callback(self._thread_done)
+
